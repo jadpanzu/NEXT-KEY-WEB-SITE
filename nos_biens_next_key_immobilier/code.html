@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-secondary-fixed': '#001d32', 'on-tertiary': '#ffffff', 'primary': '#006192', 'on-primary-fixed': '#001e31', 'on-error-container': '#93000a', 'outline-variant': '#bfc7d1', 'background': '#fcf9f2', 'tertiary': '#9e3d22', 'tertiary-fixed-dim': '#ffb5a1', 'error': '#ba1a1a', 'error-container': '#ffdad6', 'primary-container': '#007bb8', 'surface-container-low': '#f6f3ec', 'on-tertiary-fixed-variant': '#81280f', 'surface-tint': '#006496', 'on-secondary': '#ffffff', 'surface-container-high': '#ebe8e1', 'secondary-fixed-dim': '#a7caed', 'on-primary': '#ffffff', 'surface-container-lowest': '#ffffff', 'primary-fixed-dim': '#91cdff', 'on-error': '#ffffff', 'on-primary-fixed-variant': '#004b72', 'inverse-on-surface': '#f3f0e9', 'on-tertiary-fixed': '#3c0800', 'on-surface': '#1c1c18', 'primary-fixed': '#cce5ff', 'surface-variant': '#e5e2db', 'inverse-surface': '#31312c', 'surface-container': '#f0eee7', 'surface-container-highest': '#e5e2db', 'secondary-fixed': '#cde5ff', 'on-secondary-fixed-variant': '#264a67', 'on-surface-variant': '#3f4850', 'on-primary-container': '#fcfcff', 'outline': '#707881', 'on-tertiary-container': '#fffbff', 'secondary': '#3f6180', 'surface-bright': '#fcf9f2', 'secondary-container': '#b8dbff', 'tertiary-fixed': '#ffdbd1', 'on-secondary-container': '#3e607f', 'on-background': '#1c1c18', 'surface': '#fcf9f2', 'inverse-primary': '#91cdff', 'tertiary-container': '#be5437', 'surface-dim': '#dcdad3' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'gutter-sm': '1rem', 'gutter': '1.5rem', 'space-xl': '2.5rem', 'gutter-lg': '2.5rem', 'margin': '1.5rem', 'space-sm': '0.5rem', 'space-2xl': '4rem', 'space-xs': '0.25rem', 'margin-md': '3rem', 'margin-lg': '5rem', 'space-md': '1rem', 'space-lg': '1.5rem' }, fontFamily: { 'label-lg': ['Plus Jakarta Sans'], 'headline-md': ['Playfair Display'], 'headline-sm': ['Playfair Display'], 'headline-lg': ['Playfair Display'], 'label-sm': ['Plus Jakarta Sans'], 'headline-lg-mobile': ['Playfair Display'], 'title': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'display-mobile': ['Playfair Display'], 'display': ['Playfair Display'] }, fontSize: { 'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '600' }], 'headline-md': ['28px', { lineHeight: '36px', fontWeight: '500' }], 'headline-sm': ['22px', { lineHeight: '30px', fontWeight: '500' }], 'headline-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-sm': ['11px', { lineHeight: '16px', letterSpacing: '0.08em', fontWeight: '700' }], 'headline-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '0', fontWeight: '600' }], 'title': ['18px', { lineHeight: '26px', fontWeight: '600' }], 'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }], 'body-sm': ['13px', { lineHeight: '20px', fontWeight: '400' }], 'body-md': ['15px', { lineHeight: '24px', fontWeight: '400' }], 'display-mobile': ['36px', { lineHeight: '44px', letterSpacing: '-0.01em', fontWeight: '600' }], 'display': ['56px', { lineHeight: '64px', letterSpacing: '-0.02em', fontWeight: '600' }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-surface-container-lowest py-space-xs px-margin flex items-center justify-between"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant truncate">Votre prochain chapitre commence ici</span><a class="font-label-sm text-label-sm font-bold text-on-secondary-fixed shrink-0 flex items-center gap-space-xs hover:text-primary transition-colors" data-path="estimation" href="#"><span>PROJET</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></div><div class="h-20 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Logo NEXT KEY" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wv6Gd84F2ijw0uLnwezdzOIuKV2Z3IojhpC7J4kC9gnMHAIchz8XYvnwkKS4A6XaUYaRALF-wE11eewPiiBlYbHdGf3PB_lSz1-k9Fwc2eVNprmdWnaDN5n9M7Tapv3oRReW9ZdWfdBoKb-uaG8_Z70QWdTX4xGQGoBgAfAU3Z1IJpD80FxapG-qyiHLRvrJAddFSR4YdMTZ2l_y6i2KrKedsz6ZqruIYPvk6Cd469Zb-FopfhPwmwNQ"/><div class="flex flex-col"><span class="font-title text-title font-bold text-on-surface leading-none tracking-tight">NEXT KEY</span><span class="font-headline-sm text-headline-sm text-on-surface-variant sr-only">Nos Biens</span></div></div><div class="flex items-center gap-space-xs"><a aria-label="Appeler NEXT KEY" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" href="tel:+21628139992"><span class="material-symbols-outlined">call</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button aria-label="Ouvrir le menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface" onclick="document.getElementById('mobile-drawer').classList.toggle('translate-x-full')" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div></header><div class="fixed inset-0 z-[60] bg-inverse-surface/40 backdrop-blur-sm transition-transform duration-300 translate-x-full" id="mobile-drawer"><div class="absolute right-0 top-0 bottom-0 w-4/5 max-w-sm bg-surface-container-lowest p-margin flex flex-col justify-between pt-safe pb-safe shadow-[0_20px_40px_-8px_rgba(23,61,90,0.12)]"><div class="flex flex-col"><div class="flex items-center justify-between pb-space-lg"><img alt="Logo NEXT KEY" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wv6Gd84F2ijw0uLnwezdzOIuKV2Z3IojhpC7J4kC9gnMHAIchz8XYvnwkKS4A6XaUYaRALF-wE11eewPiiBlYbHdGf3PB_lSz1-k9Fwc2eVNprmdWnaDN5n9M7Tapv3oRReW9ZdWfdBoKb-uaG8_Z70QWdTX4xGQGoBgAfAU3Z1IJpD80FxapG-qyiHLRvrJAddFSR4YdMTZ2l_y6i2KrKedsz6ZqruIYPvk6Cd469Zb-FopfhPwmwNQ"/><button aria-label="Fermer le menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" type="button"><span class="material-symbols-outlined">close</span></button></div><nav class="flex flex-col gap-space-sm py-space-md" data-active-classes="text-primary font-bold"><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="accueil" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Accueil</a><a aria-current="page" class="py-space-sm transition-colors text-primary font-bold" data-path="nos-biens" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Nos Biens</a><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="acheter" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Acheter</a><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="vendre" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Vendre</a><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="services" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Nos Services</a><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="agence" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Notre Agence</a><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Contact</a></nav></div><div class="flex flex-col gap-space-md pt-space-lg"><a class="w-full py-space-md px-space-lg rounded-xl bg-tertiary text-on-tertiary text-center font-label-lg text-label-lg uppercase tracking-wider shadow-[0_8px_24px_-4px_rgba(23,61,90,0.06)] hover:bg-tertiary-container transition-colors" data-path="estimation" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">ESTIMATION GRATUITE</a><div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><p class="font-bold text-on-surface">NEXT KEY Tunis</p><p>El Menzah 9, Tunis</p><p>+216 28 139 992</p></div></div></div></div><main class="flex flex-col relative w-full pt-20 bg-surface flex-grow"><div class="flex flex-col w-full">
+<!-- Section Titre Éditorial Méditerranéen -->
+<section class="px-margin pt-space-md pb-space-lg">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="w-6 h-[2px] bg-tertiary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold">PORTFOLIO IMMOBILIER</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-headline-md tracking-tight">
+      Nos Propriétés d'Exception
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+      Découvrez notre portefeuille de villas d'architecte, appartements de prestige et terrains sélectionnés à Tunis et en banlieue nord.
+    </p>
+<!-- Stat bar / Digest pills -->
+<div class="flex items-center gap-space-sm overflow-x-auto pt-space-md pb-space-xs no-scrollbar">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-secondary-fixed shrink-0 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm">48 biens disponibles</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-secondary-fixed shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+<span class="font-label-sm text-label-sm">Mandats exclusifs 100% vérifiés</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-secondary-fixed shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">near_me</span>
+<span class="font-label-sm text-label-sm">Banlieue Nord &amp; Tunis</span>
+</div>
+</div>
+</section>
+<!-- Module de Filtres Tactiles Interactifs -->
+<section class="px-margin mb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_8px_24px_-4px_rgba(23,61,90,0.06)] flex flex-col gap-space-md">
+<!-- Ligne 1 : Segmented Control Type d'opération -->
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-space-xs">Projet</label>
+<div class="grid grid-cols-3 bg-surface-container p-1 rounded-full gap-1" id="operationTabs">
+<button class="operation-pill py-2 text-center rounded-full font-label-sm text-label-sm transition-all duration-200 bg-on-secondary-fixed text-on-secondary shadow-sm" onclick="setOperationTab(this, 'all')" type="button">
+            Tous
+          </button>
+<button class="operation-pill py-2 text-center rounded-full font-label-sm text-label-sm transition-all duration-200 text-on-surface-variant hover:text-on-surface" onclick="setOperationTab(this, 'vente')" type="button">
+            Acheter
+          </button>
+<button class="operation-pill py-2 text-center rounded-full font-label-sm text-label-sm transition-all duration-200 text-on-surface-variant hover:text-on-surface" onclick="setOperationTab(this, 'location')" type="button">
+            Louer
+          </button>
+</div>
+</div>
+<!-- Ligne 2 : Sélecteurs de critères contextuels -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Localisation -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1" for="filter-location">
+<span class="material-symbols-outlined text-[14px] text-primary">location_on</span> Secteur
+          </label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg py-2.5 pl-3 pr-8 focus:outline-none focus:bg-surface-container transition-colors" id="filter-location">
+<option value="all">Toutes localisations</option>
+<option value="marsa">La Marsa</option>
+<option value="carthage">Carthage</option>
+<option value="gammarth">Gammarth</option>
+<option value="menzah">El Menzah &amp; Ennasr</option>
+<option value="lac">Les Berges du Lac 1 &amp; 2</option>
+</select>
+<span class="material-symbols-outlined text-outline-variant text-[18px] absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Type de bien -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1" for="filter-type">
+<span class="material-symbols-outlined text-[14px] text-primary">apartment</span> Typologie
+          </label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg py-2.5 pl-3 pr-8 focus:outline-none focus:bg-surface-container transition-colors" id="filter-type">
+<option value="all">Tous types</option>
+<option value="villa">Villa d'architecte</option>
+<option value="appartement">Appartement Standing</option>
+<option value="terrain">Terrain d'exception</option>
+<option value="penthouse">Penthouse &amp; Rooftop</option>
+</select>
+<span class="material-symbols-outlined text-outline-variant text-[18px] absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Ligne 3 : Tri & Contrôle rapide -->
+<div class="flex items-center justify-between pt-space-xs gap-space-sm">
+<div class="flex items-center gap-space-xs flex-1">
+<span class="material-symbols-outlined text-[16px] text-outline">swap_vert</span>
+<select class="w-full appearance-none bg-transparent text-on-surface font-label-sm text-label-sm focus:outline-none cursor-pointer" id="filter-sort">
+<option value="recent">Tri : Les Plus Récents</option>
+<option value="price-asc">Prix : Croissant</option>
+<option value="price-desc">Prix : Décroissant</option>
+<option value="surface-desc">Surface : Plus spacieux</option>
+</select>
+</div>
+<button class="px-space-md py-2 bg-surface-container-high rounded-full flex items-center gap-1.5 text-on-secondary-fixed hover:bg-secondary-container transition-colors shrink-0" id="toggleFilterSheet" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span class="font-label-sm text-label-sm">Filtres</span>
+<span class="w-4 h-4 rounded-full bg-primary text-on-primary text-[10px] flex items-center justify-center font-bold">3</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Grille de Biens Immobiliers d'Exception -->
+<section class="px-margin flex flex-col gap-space-xl">
+<!-- Propriété 1: Villa Gammarth Supérieur (Vente) -->
+<article class="w-full bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_8px_24px_-4px_rgba(23,61,90,0.06)] flex flex-col group transition-all duration-300 hover:shadow-[0_16px_36px_-6px_rgba(23,61,90,0.10)]">
+<!-- Image & Badges -->
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img alt="Villa Les Palmes Royales Gammarth" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Luxurious modern minimalist villa in Gammarth Tunis perched on a hillside with infinity pool overlooking the sparkling Mediterranean sea, natural limestone walls, floor to ceiling glass windows, bathed in warm sunset golden hour light, lush bougainvillea and olive trees, hyper realistic architectural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxwiUMg56K-arbayuDP5Ac5dnlrkeMtgKMfIFj4dA-QiC_HLATH9t2KMAuDF41cMJCfMvkuPTeQDHHZQuDW4an1gKhMIe1zCkju1kTBYmhVFJA6KT4bCs-5TmRj_b90_BnqhwC4zVq8mhXQ1wUDH3DFm4_u9dbJqHsvklaoPstk2pNE1oj27KoXIT25LuGLpBR1n5pjZ6bIUmgZcf1F4g98ISI3eodzjhc62G-Bg3ofaXkn8efCU-M"/>
+<!-- Badge Transaction & Exclusivité -->
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 items-center">
+<span class="px-3 py-1 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-sm">
+            À VENDRE
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-on-secondary-fixed text-on-secondary font-label-sm text-label-sm tracking-wide shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed">star</span> Exclusivité
+          </span>
+</div>
+<!-- Bouton Favori Ambient -->
+<button aria-label="Ajouter aux favoris" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-secondary-fixed hover:text-tertiary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<!-- Overlay dégradé de base photo -->
+<div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-on-secondary-fixed/50 to-transparent pointer-events-none"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-1 text-on-secondary text-body-sm font-label-sm">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+<span>14 photos &amp; Visite 3D</span>
+</div>
+</div>
+<!-- Détails Éditoriaux -->
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between gap-space-sm">
+<span class="font-title text-title text-primary font-bold tracking-tight">
+            2 450 000 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">TND</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Réf. NK-2041</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium leading-snug">
+          Villa Horizon Méditerranée
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">pin_drop</span>
+          Gammarth Supérieur, Banlieue Nord
+        </p>
+<!-- Strip Caractéristiques Techniques -->
+<div class="grid grid-cols-3 gap-2 py-space-sm my-space-xs rounded-lg bg-surface-container-low px-space-sm text-center">
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">bed</span>
+<span class="font-label-lg text-label-lg font-bold">5</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Suites</span>
+</div>
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">bathtub</span>
+<span class="font-label-lg text-label-lg font-bold">4</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Salles d'eau</span>
+</div>
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">square_foot</span>
+<span class="font-label-lg text-label-lg font-bold">620</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">m² habitables</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Piscine à débordement suspendue, domotique complète, vue imprenable sur le golfe de Tunis et finitions en marbre de Thala.
+        </p>
+<!-- Action Card -->
+<div class="pt-space-xs flex items-center justify-between">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-primary-container transition-colors group/btn" href="#">
+<span>Voir le bien</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover/btn:translate-x-1">arrow_forward</span>
+</a>
+<a aria-label="Contacter conseiller" class="w-10 h-10 rounded-full bg-surface-container hover:bg-secondary-container text-on-surface flex items-center justify-center transition-colors" href="tel:+21628139992">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Propriété 2: Penthouse Les Berges du Lac 2 (Location) -->
+<article class="w-full bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_8px_24px_-4px_rgba(23,61,90,0.06)] flex flex-col group transition-all duration-300 hover:shadow-[0_16px_36px_-6px_rgba(23,61,90,0.10)]">
+<!-- Image & Badges -->
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img alt="Penthouse Les Jardins du Lac" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Opulent interior design of an upscale modern penthouse apartment in Les Berges du Lac Tunis with expansive glass terrace overlooking serene blue lake waters, refined Italian beige furniture, warm soft indoor architectural illumination, marble floor, elegant wood panel accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIKQPkV1_1elEc_X8UdiyOXoJEtX_XIHl6kByxKNgLm3om1NuKxjLfShc8f13BIGfo6xhsJKCLRkAVaokwljTUJnFcuV_Qsq_-tvNxjgheycGoBHWlGeXYXd_cWuCyLcH6E6fHoRW9nSAyhBO7bcaQDUU0yCH5yTDTDOG_AveO92WbA37lNoEAvw21jxXtegB8jiyQppcymXfaX35AAye40Q9lptvfhCRHrqWqnqs3naIHTjjftNTR"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 items-center">
+<span class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-sm">
+            À LOUER
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm tracking-wide shadow-sm">
+            Meublé Luxe
+          </span>
+</div>
+<button aria-label="Ajouter aux favoris" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-secondary-fixed hover:text-tertiary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-on-secondary-fixed/50 to-transparent pointer-events-none"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-1 text-on-secondary text-body-sm font-label-sm">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+<span>9 photos</span>
+</div>
+</div>
+<!-- Détails -->
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between gap-space-sm">
+<span class="font-title text-title text-primary font-bold tracking-tight">
+            6 800 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">TND / mois</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Réf. NK-1892</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium leading-snug">
+          Penthouse Le Belvédère du Lac
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">pin_drop</span>
+          Les Berges du Lac 2, Tunis
+        </p>
+<!-- Caractéristiques -->
+<div class="grid grid-cols-3 gap-2 py-space-sm my-space-xs rounded-lg bg-surface-container-low px-space-sm text-center">
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">bed</span>
+<span class="font-label-lg text-label-lg font-bold">3</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chambres</span>
+</div>
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">bathtub</span>
+<span class="font-label-lg text-label-lg font-bold">3</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bains</span>
+</div>
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">square_foot</span>
+<span class="font-label-lg text-label-lg font-bold">295</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">m² + 80m² terr.</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Terrasse panoramique sur le plan d'eau, ascenseur privatif codé, 2 places de parking sous-sol sécurisé, mobilier d'éditeur italien.
+        </p>
+<!-- Action Card -->
+<div class="pt-space-xs flex items-center justify-between">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-primary-container transition-colors group/btn" href="#">
+<span>Voir le bien</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover/btn:translate-x-1">arrow_forward</span>
+</a>
+<a aria-label="Contacter conseiller" class="w-10 h-10 rounded-full bg-surface-container hover:bg-secondary-container text-on-surface flex items-center justify-center transition-colors" href="tel:+21628139992">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Propriété 3: Villa Carthage Présidence (Vente) -->
+<article class="w-full bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_8px_24px_-4px_rgba(23,61,90,0.06)] flex flex-col group transition-all duration-300 hover:shadow-[0_16px_36px_-6px_rgba(23,61,90,0.10)]">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img alt="Demeure Historique Carthage" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Prestigious neo classical Mediterranean mansion in Carthage Tunis surrounded by mature date palms and stone arches, grand courtyard with fountain, warm sandy limestone facade, clear azure sky, sun drenched elegant residential estate architectural view." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbsW-0itE3G95rPlyFM72-hTZcOtj_cu0SNOdInGSed4ddlrHIVQYcCxN4otrg8tPpoPGPGyvdVllr09PTN3mSBOcu4ximiFgre8alamcQEzVFZbSNdQnqVu38tqbptiztMJvnzlpxXbOBlQ1dRCl1tHaNs04eXaamTZ68n3Pi6Bqth65LZZ0p0n7R3ZKVftJiMo2DFcXe81ohuVUxNc40cXvRy3n0NOozYtC1Q_6u1evG3sPwUIzv"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 items-center">
+<span class="px-3 py-1 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-sm">
+            À VENDRE
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-on-secondary-fixed text-on-secondary font-label-sm text-label-sm tracking-wide shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed">verified</span> Rare
+          </span>
+</div>
+<button aria-label="Ajouter aux favoris" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-secondary-fixed hover:text-tertiary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-on-secondary-fixed/50 to-transparent pointer-events-none"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-1 text-on-secondary text-body-sm font-label-sm">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+<span>22 photos</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between gap-space-sm">
+<span class="font-title text-title text-primary font-bold tracking-tight">
+            3 900 000 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">TND</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Réf. NK-3105</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium leading-snug">
+          Demeure Les Jardins de Carthage
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">pin_drop</span>
+          Carthage Présidence, Site Classé
+        </p>
+<div class="grid grid-cols-3 gap-2 py-space-sm my-space-xs rounded-lg bg-surface-container-low px-space-sm text-center">
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">bed</span>
+<span class="font-label-lg text-label-lg font-bold">6</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chambres</span>
+</div>
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">bathtub</span>
+<span class="font-label-lg text-label-lg font-bold">5</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bains</span>
+</div>
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">square_foot</span>
+<span class="font-label-lg text-label-lg font-bold">780</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">m² sur 1200m²</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Jardin arboré centenaire avec fontaines andalouses, pavillon indépendant pour invités et système de sécurité diplomatique.
+        </p>
+<div class="pt-space-xs flex items-center justify-between">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-primary-container transition-colors group/btn" href="#">
+<span>Voir le bien</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover/btn:translate-x-1">arrow_forward</span>
+</a>
+<a aria-label="Contacter conseiller" class="w-10 h-10 rounded-full bg-surface-container hover:bg-secondary-container text-on-surface flex items-center justify-center transition-colors" href="tel:+21628139992">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Propriété 4: Terrain Constructible La Marsa Cube (Vente) -->
+<article class="w-full bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_8px_24px_-4px_rgba(23,61,90,0.06)] flex flex-col group transition-all duration-300 hover:shadow-[0_16px_36px_-6px_rgba(23,61,90,0.10)]">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img alt="Terrain d'exception La Marsa" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Prime seaside building land plot in La Marsa Cube Tunis with direct blue Mediterranean sea view, surrounded by dry stone walls and coastal pine trees, warm golden morning sun, peaceful prestigious location, aerial drone landscape photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCizAilEiwrZ0UE0m5WCuq59xQ0rhN-UPdy4K08jlohZTvqWzoT5dAPfkB_TEozdtxxI8GxxDFnLepsYNhrWxrzwtGnaRkLRb7K4lyj6OrlBYRdzWKD75dMx1NTxiYcGFUEOlp9sP4Cvje2WdTA2R9ugnHvgfSkz4zdK3Yydgn4XhbYRhxPtyIbdjoSupbYFxUYijt4_-7KuFWxgyLKFmUz8JyEspH6HC6KnLPMOwlJpHCQ8g2-r6I8"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 items-center">
+<span class="px-3 py-1 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-sm">
+            À VENDRE
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm tracking-wide shadow-sm">
+            Titre Foncier Bleu
+          </span>
+</div>
+<button aria-label="Ajouter aux favoris" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-secondary-fixed hover:text-tertiary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-on-secondary-fixed/50 to-transparent pointer-events-none"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-1 text-on-secondary text-body-sm font-label-sm">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+<span>6 photos &amp; Plan topo</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between gap-space-sm">
+<span class="font-title text-title text-primary font-bold tracking-tight">
+            1 850 000 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">TND</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Réf. NK-1109</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium leading-snug">
+          Terrain Pieds-dans-l'Eau La Marsa Cube
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">pin_drop</span>
+          Marsa Cube, Tunis
+        </p>
+<div class="grid grid-cols-3 gap-2 py-space-sm my-space-xs rounded-lg bg-surface-container-low px-space-sm text-center">
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">landscape</span>
+<span class="font-label-lg text-label-lg font-bold">1 040</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">m² superficie</span>
+</div>
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">architecture</span>
+<span class="font-label-lg text-label-lg font-bold">R+1</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vocation villa</span>
+</div>
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-1 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-primary">water</span>
+<span class="font-label-lg text-label-lg font-bold">80m</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Accès plage</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Emplacement ultra-recherché, façade de 28 mètres linéaires, raccordements eau/électricité prêts, viabilisé.
+        </p>
+<div class="pt-space-xs flex items-center justify-between">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-primary-container transition-colors group/btn" href="#">
+<span>Voir le bien</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover/btn:translate-x-1">arrow_forward</span>
+</a>
+<a aria-label="Contacter conseiller" class="w-10 h-10 rounded-full bg-surface-container hover:bg-secondary-container text-on-surface flex items-center justify-center transition-colors" href="tel:+21628139992">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+</article>
+</section>
+<!-- Pagination Élégante -->
+<nav aria-label="Pagination catalogue" class="px-margin py-space-xl flex flex-col items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<!-- Précédent désactivé -->
+<button class="w-10 h-10 rounded-full bg-surface-container-low text-outline-variant flex items-center justify-center cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<!-- Pages numérotées -->
+<button class="w-10 h-10 rounded-full bg-on-secondary-fixed text-on-secondary font-headline-sm text-headline-sm flex items-center justify-center shadow-sm" type="button">
+        1
+      </button>
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-headline-sm text-headline-sm flex items-center justify-center transition-colors" type="button">
+        2
+      </button>
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-headline-sm text-headline-sm flex items-center justify-center transition-colors" type="button">
+        3
+      </button>
+<span class="px-2 text-outline font-title">...</span>
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-headline-sm text-headline-sm flex items-center justify-center transition-colors" type="button">
+        8
+      </button>
+<!-- Suivant -->
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+      Affichage de 1-4 sur 48 propriétés d'exception
+    </span>
+</nav>
+<!-- Bannière CTA : Mandat de Recherche Sur Mesure -->
+<section class="px-margin mb-space-2xl">
+<div class="relative bg-gradient-to-br from-on-secondary-fixed via-on-primary-fixed to-secondary text-on-secondary rounded-xl p-space-lg overflow-hidden shadow-[0_16px_36px_-6px_rgba(23,61,90,0.15)] flex flex-col gap-space-md">
+<!-- Motif architectural décoratif en fond -->
+<div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-tertiary/10 blur-xl pointer-events-none"></div>
+<div class="absolute top-2 right-4 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[90px] text-surface-container-lowest">key</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed font-bold">SERVICE CHASSEUR DE BIENS</span>
+</div>
+<div class="flex flex-col gap-space-xs relative z-10">
+<h2 class="font-headline-sm text-headline-sm font-medium leading-tight text-surface-container-lowest">
+          Vous ne trouvez pas votre bien idéal ?
+        </h2>
+<p class="font-body-sm text-body-sm text-outline-variant leading-relaxed">
+          Confiez-nous votre recherche sur mesure. NEXT KEY active son réseau off-market confidentiel à El Menzah, Carthage, La Marsa et Gammarth.
+        </p>
+</div>
+<div class="pt-space-xs flex flex-col gap-space-sm relative z-10">
+<a class="w-full py-3.5 px-space-md rounded-xl bg-tertiary text-on-tertiary font-label-lg text-label-lg uppercase tracking-wider text-center font-bold hover:bg-tertiary-container transition-colors shadow-md flex items-center justify-center gap-2" data-path="contact" href="#">
+<span>Définir mon cahier des charges</span>
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<div class="flex items-center justify-center gap-space-md text-surface-container-high font-body-sm text-body-sm pt-1">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-tertiary-fixed">lock</span> Confidentialité 100%</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-tertiary-fixed">schedule</span> Réponse en 24h</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Micro-interaction simple pour les onglets segmented control
+  function setOperationTab(button, filterVal) {
+    const parent = document.getElementById('operationTabs');
+    if (!parent) return;
+    const buttons = parent.querySelectorAll('.operation-pill');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-on-secondary-fixed', 'text-on-secondary', 'shadow-sm');
+      btn.classList.add('text-on-surface-variant');
+    });
+    button.classList.add('bg-on-secondary-fixed', 'text-on-secondary', 'shadow-sm');
+    button.classList.remove('text-on-surface-variant');
+  }
+</script><footer class="bg-on-secondary-fixed text-on-secondary px-margin pt-space-2xl pb-space-2xl mt-space-2xl"><div class="flex flex-col gap-space-xl"><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-medium">NEXT KEY</span><p class="font-body-md text-body-md text-outline-variant italic">La clé de votre prochain projet immobilier.</p></div><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-container-highest"><p class="font-label-lg text-label-lg text-surface-container-lowest uppercase tracking-wider mb-space-xs">Agence</p><p>Rue Hédi Essoued, El Menzah 9, Tunis</p><p>Tél : <a class="hover:underline" href="tel:+21628139992">+216 28 139 992</a> / <a class="hover:underline" href="tel:+21628139994">+216 28 139 994</a></p></div><div class="flex flex-wrap gap-x-space-lg gap-y-space-sm font-label-sm text-label-sm text-surface-container-high"><a class="hover:text-surface-container-lowest transition-colors" data-path="acheter" href="#">Acheter</a><a class="hover:text-surface-container-lowest transition-colors" data-path="vendre" href="#">Vendre</a><a class="hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Gestion immobilière</a><a class="hover:text-surface-container-lowest transition-colors" data-path="marche" href="#">Analyse du marché</a><a class="hover:text-surface-container-lowest transition-colors" data-path="mentions-legales" href="#">Mentions légales</a><a class="hover:text-surface-container-lowest transition-colors" data-path="confidentialite" href="#">Politique de confidentialité</a></div><div class="font-body-sm text-body-sm text-outline-variant pt-space-lg"><p>© 2024 NEXT KEY Immobilier. Tous droits réservés.</p></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-bold"><div class="h-16 px-gutter flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="accueil" href="#"><span class="material-symbols-outlined text-[22px]">roofing</span><span class="font-label-sm text-label-sm mt-0.5">Accueil</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-primary font-bold" data-path="nos-biens" href="#"><span class="material-symbols-outlined text-[22px]">apartment</span><span class="font-label-sm text-label-sm mt-0.5">Biens</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-tertiary hover:text-tertiary-container transition-colors" data-path="appel" href="tel:+21628139992"><span class="material-symbols-outlined text-[22px]">call</span><span class="font-label-sm text-label-sm mt-0.5">Appel</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="estimation" href="#"><span class="material-symbols-outlined text-[22px]">calculate</span><span class="font-label-sm text-label-sm mt-0.5">Estimation</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="agence" href="#"><span class="material-symbols-outlined text-[22px]">domain</span><span class="font-label-sm text-label-sm mt-0.5">Agence</span></a></div></nav></body></html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-secondary-fixed': '#001d32', 'on-tertiary': '#ffffff', 'primary': '#006192', 'on-primary-fixed': '#001e31', 'on-error-container': '#93000a', 'outline-variant': '#bfc7d1', 'background': '#fcf9f2', 'tertiary': '#9e3d22', 'tertiary-fixed-dim': '#ffb5a1', 'error': '#ba1a1a', 'error-container': '#ffdad6', 'primary-container': '#007bb8', 'surface-container-low': '#f6f3ec', 'on-tertiary-fixed-variant': '#81280f', 'surface-tint': '#006496', 'on-secondary': '#ffffff', 'surface-container-high': '#ebe8e1', 'secondary-fixed-dim': '#a7caed', 'on-primary': '#ffffff', 'surface-container-lowest': '#ffffff', 'primary-fixed-dim': '#91cdff', 'on-error': '#ffffff', 'on-primary-fixed-variant': '#004b72', 'inverse-on-surface': '#f3f0e9', 'on-tertiary-fixed': '#3c0800', 'on-surface': '#1c1c18', 'primary-fixed': '#cce5ff', 'surface-variant': '#e5e2db', 'inverse-surface': '#31312c', 'surface-container': '#f0eee7', 'surface-container-highest': '#e5e2db', 'secondary-fixed': '#cde5ff', 'on-secondary-fixed-variant': '#264a67', 'on-surface-variant': '#3f4850', 'on-primary-container': '#fcfcff', 'outline': '#707881', 'on-tertiary-container': '#fffbff', 'secondary': '#3f6180', 'surface-bright': '#fcf9f2', 'secondary-container': '#b8dbff', 'tertiary-fixed': '#ffdbd1', 'on-secondary-container': '#3e607f', 'on-background': '#1c1c18', 'surface': '#fcf9f2', 'inverse-primary': '#91cdff', 'tertiary-container': '#be5437', 'surface-dim': '#dcdad3' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'gutter-sm': '1rem', 'gutter': '1.5rem', 'space-xl': '2.5rem', 'gutter-lg': '2.5rem', 'margin': '1.5rem', 'space-sm': '0.5rem', 'space-2xl': '4rem', 'space-xs': '0.25rem', 'margin-md': '3rem', 'margin-lg': '5rem', 'space-md': '1rem', 'space-lg': '1.5rem' }, fontFamily: { 'label-lg': ['Plus Jakarta Sans'], 'headline-md': ['Playfair Display'], 'headline-sm': ['Playfair Display'], 'headline-lg': ['Playfair Display'], 'label-sm': ['Plus Jakarta Sans'], 'headline-lg-mobile': ['Playfair Display'], 'title': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'display-mobile': ['Playfair Display'], 'display': ['Playfair Display'] }, fontSize: { 'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '600' }], 'headline-md': ['28px', { lineHeight: '36px', fontWeight: '500' }], 'headline-sm': ['22px', { lineHeight: '30px', fontWeight: '500' }], 'headline-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-sm': ['11px', { lineHeight: '16px', letterSpacing: '0.08em', fontWeight: '700' }], 'headline-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '0', fontWeight: '600' }], 'title': ['18px', { lineHeight: '26px', fontWeight: '600' }], 'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }], 'body-sm': ['13px', { lineHeight: '20px', fontWeight: '400' }], 'body-md': ['15px', { lineHeight: '24px', fontWeight: '400' }], 'display-mobile': ['36px', { lineHeight: '44px', letterSpacing: '-0.01em', fontWeight: '600' }], 'display': ['56px', { lineHeight: '64px', letterSpacing: '-0.02em', fontWeight: '600' }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Retour" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Logo NEXT KEY" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wv6Gd84F2ijw0uLnwezdzOIuKV2Z3IojhpC7J4kC9gnMHAIchz8XYvnwkKS4A6XaUYaRALF-wE11eewPiiBlYbHdGf3PB_lSz1-k9Fwc2eVNprmdWnaDN5n9M7Tapv3oRReW9ZdWfdBoKb-uaG8_Z70QWdTX4xGQGoBgAfAU3Z1IJpD80FxapG-qyiHLRvrJAddFSR4YdMTZ2l_y6i2KrKedsz6ZqruIYPvk6Cd469Zb-FopfhPwmwNQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Détail Du Bien</h1></div><div class="flex items-center gap-space-xs"><a aria-label="Appeler NEXT KEY" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" href="tel:+21628139992"><span class="material-symbols-outlined">call</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface flex-grow"><div class="flex flex-col w-full pb-safe">
+<!-- Interactive Media Showcase -->
+<section class="relative w-full bg-surface-container-high overflow-hidden">
+<div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth w-full aspect-[4/3] no-scrollbar" id="gallery-carousel">
+<!-- Slide 1 -->
+<div class="snap-center shrink-0 w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="Modern luxury Mediterranean villa at sunset in La Marsa Carthage, featuring minimalist white cube volumes, archway details, natural stone accents, a deep emerald turquoise swimming pool reflecting twilight, ancient olive trees, and sun loungers overlooking the Gulf of Tunis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5vQI9FBa9R3HbVrWaF7AYD1D4nfc1GkNECkGeW-70Mb6q_YXW9P__F-aVWDODfpZVGUSKMcC8s_WtyR2LeyJVqU6StbVlhGSZ3tMRIe8UBKhwPXvyhfSAayKfQ6u3x26E52HXianU49LLWwQoXJ0O9RAmE2IbdYMMmx1oYTTETn-SSfAcG2cnEvPqYYhzJxU2FWw9Fy747R5vLRTJqG4NMC7Xe-how20coKuxconcmEkl44uppvUX"/>
+</div>
+<!-- Slide 2 -->
+<div class="snap-center shrink-0 w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="Interior architectural grand living room of an upscale villa in Tunis with floor-to-ceiling glass doors, natural travertine floor, bespoke Italian designer furniture, warm recessed cove lighting, and views onto a sun-drenched private Mediterranean patio with olive trees." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuIZ4WPzeRxdiBEuV6T0hn6isF8iXE9wLEWLed_50ut-jdLFzYVLMxc3En2UcocTguvajG-Kb26ahT05SVKGlDcAK07WkejCt4a1rPKn-RKF7OmISE3jDMkhViRmGSCfGq9_CFM5mkTAusTK2a-v-Wx5pVuDBnAREEwMDvH2vNVAjN-R47nXs4SXzAakHma1EvKykwCbAx3yEyQRVjPiv2339GTksgFi3nGWKxX_OLubWSn8LZQx5v"/>
+</div>
+<!-- Slide 3 -->
+<div class="snap-center shrink-0 w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="Master bedroom suite in a contemporary Tunisian mansion overlooking Carthage sea bay, warm neutral beige and soft terracotta linens, oak slatted panels, private terrace, soft morning Mediterranean light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7rbjEC7S_orjLXQwrXrXA6Cx7Ab8ZfPsKiCCuxnL_sAspXfYnfoy5FPGksr_GmDbfVRqLO1kr6dKmvm41g6euYgZXRE2JtyyeSm8qE8htxJzRif2VEk0joMNB-MOVj7-oZQaL-0lryA_nSUOZ3poShb6-jFLmotyJqwtcZ0fZ4z5Lq_4-8yGCvKMlOGc87P_LDw2mZQ19w0OOqc4HRYb2XCyN7zHJf9nIX-e_JGHctOriElizZ-qB"/>
+</div>
+<!-- Slide 4 -->
+<div class="snap-center shrink-0 w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="Sleek Italian open-plan kitchen in a minimalist luxury estate, featuring dark walnut millwork, Calacatta marble waterfall island, concealed high-end appliances, and discreet ambient pendant lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5-3Fh9TqFbg0Tgx-bHw1dqwzGDHeI1yJTpMd-ml1SuVeucpRUYpiBFrSQWGq6eFkX7mmKh8hTOis1jo7CMzD7A0zj4C7tKM1biV3twYgb4A5J5Cecn0-6_99IdvDrvSeoD222TpkdwGI9fZr4j1g1RYWgy6teqIsu4bHVDobL0a13nZnApV1xxeUviUuyQi-86-yYx2-BjIyj8GFfcWXB7Jn26k9O46GCtFdpITwPCN5SzKVpnPEf"/>
+</div>
+</div>
+<!-- Floating Badges Top Strip -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none z-10">
+<div class="flex items-center gap-2 pointer-events-auto">
+<span class="bg-tertiary text-on-tertiary px-3 py-1 rounded-full font-label-sm text-label-sm tracking-widest uppercase shadow-md">
+          À VENDRE
+        </span>
+<span class="bg-on-secondary-fixed text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm tracking-wider uppercase shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed">verified</span>
+          EXCLUSIVITÉ NEXT KEY
+        </span>
+</div>
+<div class="flex items-center gap-2 pointer-events-auto">
+<button aria-label="Enregistrer ce bien" class="w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-md text-on-surface flex items-center justify-center transition-transform active:scale-95" id="fav-btn" onclick="toggleFavorite(this)">
+<span class="material-symbols-outlined text-[20px] transition-colors" id="fav-icon">favorite_border</span>
+</button>
+<button aria-label="Partager" class="w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-md text-on-surface flex items-center justify-center transition-transform active:scale-95" id="share-btn" onclick="shareProperty()">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+<!-- Gallery Counter & Fullscreen trigger -->
+<div class="absolute bottom-4 right-4 flex items-center gap-2 z-10">
+<div class="bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+<span id="gallery-counter">1 / 12</span>
+</div>
+<button aria-label="Plein écran" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center shadow transition-transform active:scale-95" onclick="openFullscreenPrompt()">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+</section>
+<!-- Title & Key Pricing Header -->
+<section class="px-margin pt-6 pb-5 flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>La Marsa / Carthage · Tunis</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight tracking-tight">
+      Villa Contemporaine d’Architecte avec Piscine &amp; Vue Mer
+    </h2>
+<div class="flex items-baseline justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Prix de présentation</span>
+<span class="font-headline-md text-headline-md text-on-secondary-fixed">
+          2 850 000 <span class="text-title font-title font-semibold text-secondary">TND</span>
+</span>
+</div>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-3 py-1 rounded-full">
+        Réf. NK-MAR-840
+      </span>
+</div>
+</section>
+<!-- Key Specs Metric Grid -->
+<section class="px-margin py-3">
+<div class="grid grid-cols-4 gap-2 bg-surface-container-lowest p-3 rounded-xl shadow-sm">
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[22px] mb-1">king_bed</span>
+<span class="font-title text-title text-on-surface leading-none">5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Suites</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[22px] mb-1">bathtub</span>
+<span class="font-title text-title text-on-surface leading-none">4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Bains</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[22px] mb-1">square_foot</span>
+<span class="font-title text-title text-on-surface leading-none">480</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">m² Bâti</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[22px] mb-1">yard</span>
+<span class="font-title text-title text-on-surface leading-none">850</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">m² Parc</span>
+</div>
+</div>
+</section>
+<!-- Quick Action Micro-bar -->
+<section class="px-margin py-2">
+<div class="flex gap-2">
+<a class="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-on-secondary-fixed text-on-primary font-label-lg text-label-lg transition-transform active:scale-[0.98] shadow-sm" href="tel:+21628139992">
+<span class="material-symbols-outlined text-[18px]">call</span>
+        Appeler
+      </a>
+<a class="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-tertiary text-on-tertiary font-label-lg text-label-lg transition-transform active:scale-[0.98] shadow-sm" href="#booking-sheet">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+        Planifier visite
+      </a>
+<button aria-label="Télécharger PDF" class="w-12 h-12 flex items-center justify-center rounded-lg bg-secondary-container text-on-secondary-container transition-transform active:scale-[0.98]" onclick="downloadBrochure()">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</section>
+<!-- Editorial Architectural Description -->
+<section class="px-margin pt-6 pb-4">
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[20px]">architecture</span>
+<h3 class="font-title text-title">Élégance Contemporaine &amp; Lumière</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Située dans un écrin résidentiel confidentiel entre le charme intemporel de Carthage et l'art de vivre de La Marsa, cette œuvre architecturale neuve redéfinit le luxe méditerranéen. Ses volumes épurés dialoguent avec la douceur des brises marines et la lumière dorée du crépuscule.
+      </p>
+<div class="p-3 bg-surface-container-low rounded-lg flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">wb_sunny</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Orientation Sud-Est offrant un ensoleillement optimal tout au long du jour avec perspective dégagée sur les collines et la baie de Carthage.
+        </p>
+</div>
+<div class="hidden flex flex-col gap-3" id="description-more">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          La réception de plus de 120 m² s’ouvre intégralement grâce à de monumentales baies vitrées coulissantes à galandage vers une terrasse en pierre naturelle de Thala et un bassin à débordement chauffé. Les oliviers centenaires apportent un cachet serein et authentique.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          À l'étage, l'aile maîtresse comprend un dressing haute couture sur mesure, une salle d'eau sculpturale en marbre et une terrasse privative dominant le panorama marin.
+        </p>
+</div>
+<button class="self-start text-primary font-label-lg text-label-lg flex items-center gap-1 pt-1" id="toggle-desc-btn" onclick="toggleDescription()">
+<span>Lire la suite</span>
+<span class="material-symbols-outlined text-[16px]" id="desc-arrow">expand_more</span>
+</button>
+</div>
+</section>
+<!-- Signature Equipment & Features -->
+<section class="px-margin py-3">
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col gap-4">
+<h3 class="font-title text-title text-on-surface flex items-center justify-between">
+<span>Équipements d’Exception</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded">6 Éléments clés</span>
+</h3>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="flex items-center gap-2.5 p-2.5 bg-surface-container-low rounded-lg">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">pool</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-lg text-label-lg text-on-surface truncate">Piscine privée</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Pierre naturelle</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-2.5 bg-surface-container-low rounded-lg">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">park</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-lg text-label-lg text-on-surface truncate">Jardin paysager</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Oliviers centenaires</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-2.5 bg-surface-container-low rounded-lg">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">checkroom</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-lg text-label-lg text-on-surface truncate">Suite parentale</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Dressing &amp; bain îlot</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-2.5 bg-surface-container-low rounded-lg">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">hvac</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-lg text-label-lg text-on-surface truncate">Climatisation VRV</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Gainable bizone</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-2.5 bg-surface-container-low rounded-lg">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">soup_kitchen</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-lg text-label-lg text-on-surface truncate">Cuisine italienne</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Équipée Poliform</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-2.5 bg-surface-container-low rounded-lg">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">garage</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-lg text-label-lg text-on-surface truncate">Garage couvert</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">2 grands véhicules</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Certification domotique KNX</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px]">bolt</span> Système intégré
+        </span>
+</div>
+</div>
+</section>
+<!-- Location Map Preview -->
+<section class="px-margin py-3">
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">explore</span>
+<h3 class="font-title text-title text-on-surface">Situation Géographique</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Secteur Résidentiel</span>
+</div>
+<div class="w-full h-40 bg-surface-container-high rounded-lg overflow-hidden relative shadow-inner flex items-center justify-center" data-location="La Marsa, Tunis, Tunisia" style="">
+<div class="absolute inset-0 bg-on-secondary-fixed/10"></div>
+<div class="relative bg-surface-container-lowest/95 backdrop-blur-md px-3 py-2 rounded-full shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">pin_drop</span>
+<span class="font-label-sm text-label-sm text-on-surface">Carthage / La Marsa · Périmètre sauvegardé</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 pt-1 text-center">
+<div class="p-2 bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Plage Marsa</span>
+<span class="font-title text-title text-on-surface">4 min</span>
+</div>
+<div class="p-2 bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Aéroport Tunis</span>
+<span class="font-title text-title text-on-surface">15 min</span>
+</div>
+<div class="p-2 bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Écoles inter.</span>
+<span class="font-title text-title text-on-surface">6 min</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Dedicated NEXT KEY Advisor Card -->
+<section class="px-margin py-3" id="advisor-card">
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col gap-4">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="relative w-14 h-14 rounded-full overflow-hidden shadow-sm bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a sophisticated senior Mediterranean real estate director dressed in a sharp navy linen blazer with a warm and trustworthy smile, natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBofJth9TTK9aOpEPhakksNiV6YrGlIpBt_O0K1mnGrMqocqOnE-R-NA_etl3ZmM5I-AW1Upfm0BnV_WkjiTD60kfdndDvzbV62eEp7xl27d1zq0Qe5vr87vIZ1VBjS1F2I-WWnwSIqWYycbZ_Fq2kwkahjchYVMXkYtEMvEbXA5YnWKLhmRO2uXFwDa2-twYqFaNBxLFTmycNDduXVWS_ldS02R-QhweKseNSwLGiXiUPdtp_ZiCu2"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h4 class="font-title text-title text-on-surface">Sami Ben Salem</h4>
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Directeur Pôle Prestige · NEXT KEY</p>
+<p class="font-label-sm text-label-sm text-secondary">Expert La Marsa &amp; Carthage</p>
+</div>
+</div>
+<img alt="NEXT KEY" class="h-6 w-auto opacity-70" src="https://lh3.googleusercontent.com/aida/AEtjO1Wv6Gd84F2ijw0uLnwezdzOIuKV2Z3IojhpC7J4kC9gnMHAIchz8XYvnwkKS4A6XaUYaRALF-wE11eewPiiBlYbHdGf3PB_lSz1-k9Fwc2eVNprmdWnaDN5n9M7Tapv3oRReW9ZdWfdBoKb-uaG8_Z70QWdTX4xGQGoBgAfAU3Z1IJpD80FxapG-qyiHLRvrJAddFSR4YdMTZ2l_y6i2KrKedsz6ZqruIYPvk6Cd469Zb-FopfhPwmwNQ"/>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<a class="w-full py-3 px-4 rounded-lg bg-on-secondary-fixed text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]" href="tel:+21628139992">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+          Appeler le conseiller (+216 28 139 992)
+        </a>
+<a class="w-full py-3 px-4 rounded-lg bg-surface-container-low text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 transition-transform active:scale-[0.98]" href="https://wa.me/21628139992?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20la%20Villa%20Mirador%20(Ref%20NK-MAR-840)" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-[#25D366]">chat</span>
+          Échanger par WhatsApp
+        </a>
+</div>
+</div>
+</section>
+<!-- Interactive Appointment & Inquiry Form -->
+<section class="px-margin py-3" id="booking-sheet">
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">event_available</span>
+<h3 class="font-title text-title text-on-surface">Demande de Visite Privée</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Un conseiller dédié vous accueille selon vos disponibilités en toute discrétion.
+        </p>
+</div>
+<form class="flex flex-col gap-3" id="inquiry-form" onsubmit="handleInquirySubmit(event)">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="client-name">Nom et Prénom *</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="client-name" placeholder="Ex: Yassine Triki" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="client-phone">Téléphone *</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="client-phone" placeholder="+216 -- --- ---" required="" type="tel"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="client-date">Date souhaitée</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="client-date" type="date"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="client-notes">Message ou critères particuliers</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary resize-none" id="client-notes" placeholder="Je souhaite être recontacté en fin de journée..." rows="2"></textarea>
+</div>
+<button class="w-full mt-1 py-3 px-4 rounded-lg bg-tertiary text-on-tertiary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow transition-transform active:scale-[0.98]" id="submit-inquiry-btn" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+          Confirmer la demande
+        </button>
+<div class="hidden p-3 rounded-lg bg-surface-container text-primary font-body-sm text-body-sm text-center" id="inquiry-success">
+          ✓ Demande transmise avec succès. Notre équipe vous rappelle sous 2 heures.
+        </div>
+</form>
+</div>
+</section>
+<!-- Similar Curated Properties -->
+<section class="px-margin pt-3 pb-8 flex flex-col gap-3">
+<div class="flex items-baseline justify-between">
+<h3 class="font-title text-title text-on-surface">Biens Similaires d'Exception</h3>
+<span class="font-label-sm text-label-sm text-primary">Marsa &amp; Ennasr</span>
+</div>
+<!-- Similar Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative w-full aspect-[16/9]">
+<img class="w-full h-full object-cover" data-alt="Prestigious modern villa in Gammarth with panoramic sea views over the Mediterranean bay, infinity swimming pool, white limestone terraces, and luxury garden." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkeJ29sxUjAmxzU-HT70YvmltC3_rDzKaE9hhQ92VvfEZD79xaG_g2pNuen2ct2cgN4uJU-99S-HK27VDULQ_03neyoIP2UHmhUbTtJdKTqrtwkpCmThhfpCY56vtkteDBLzjQ75KdD3dIL1r3TebM5GSMsLGRKysvhrcEHj5fbuhdm7ye9oY6mTtnbC0HRgxrPitqE3OEYPaKDitw4BlswXgoNevlQDMteju5qfV9Hng39VxzuQ6s"/>
+<div class="absolute top-3 left-3 bg-tertiary text-on-tertiary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full uppercase">
+          À VENDRE
+        </div>
+<div class="absolute bottom-3 right-3 bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-lg text-label-lg px-2.5 py-1 rounded-md">
+          3 200 000 TND
+        </div>
+</div>
+<div class="p-4 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-primary uppercase">Gammarth Supérieur</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Demeure Panoramique Vue Mer</h4>
+<div class="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">king_bed</span> 6 ch.</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">square_foot</span> 540 m²</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">pool</span> Infinity Pool</span>
+</div>
+</div>
+</div>
+<!-- Similar Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative w-full aspect-[16/9]">
+<img class="w-full h-full object-cover" data-alt="Architectural modern villa in El Menzah 9 Tunis, geometric white stone facades, curated private palm garden, clean lines and sheltered terrace patio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaK5jbv5gzV16aNMqTEtTxP5VK7LtwCh_LV2z9uejc5Z1qV5cDdXoEUDZI1vAnrEif-PBpN82kI1SdCcr2CxQsX1jcosXt2Mf9W0Ehu1OYU37JhQrZ-3HdQ07Vg3GrJN9q4atvlCUB0DqooAJqP1ctLdMTGE380raAwzB5R-NAIASIvd8g2L0RVC0BpJou8_EBD6uxNZxlVQh6BCy7KvCBNQ4-rhNMJfB_DHy6TEwjIeXz1qmijBx4"/>
+<div class="absolute top-3 left-3 bg-tertiary text-on-tertiary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full uppercase">
+          À VENDRE
+        </div>
+<div class="absolute bottom-3 right-3 bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-lg text-label-lg px-2.5 py-1 rounded-md">
+          2 100 000 TND
+        </div>
+</div>
+<div class="p-4 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-primary uppercase">El Menzah 9</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Villa Contemporaine au Calme Absolu</h4>
+<div class="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">king_bed</span> 4 ch.</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">square_foot</span> 410 m²</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">yard</span> 620 m²</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Toast Notification Feedback Container -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none transition-all duration-300 opacity-0 translate-y-3" id="toast">
+<div class="bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full font-label-lg text-label-lg shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]" id="toast-icon">check_circle</span>
+<span id="toast-message">Brochure téléchargée avec succès</span>
+</div>
+</div>
+</div>
+<script>
+  function toggleFavorite(btn) {
+    const icon = document.getElementById('fav-icon');
+    const isFav = icon.textContent === 'favorite';
+    if (isFav) {
+      icon.textContent = 'favorite_border';
+      icon.classList.remove('text-tertiary');
+      showToast('Retiré des favoris', 'bookmark_remove');
+    } else {
+      icon.textContent = 'favorite';
+      icon.classList.add('text-tertiary');
+      showToast('Ajouté à vos favoris NEXT KEY', 'favorite');
+    }
+  }
+
+  function shareProperty() {
+    if (navigator.share) {
+      navigator.share({
+        title: "Villa Mirador d'Architecte — NEXT KEY",
+        text: "Découvrez cette sublime villa contemporaine à La Marsa / Carthage sur NEXT KEY Immobilier.",
+        url: window.location.href
+      }).catch(() => {});
+    } else {
+      navigator.clipboard.writeText(window.location.href);
+      showToast('Lien de la propriété copié !', 'link');
+    }
+  }
+
+  function toggleDescription() {
+    const more = document.getElementById('description-more');
+    const btn = document.getElementById('toggle-desc-btn');
+    const arrow = document.getElementById('desc-arrow');
+    const isHidden = more.classList.contains('hidden');
+
+    if (isHidden) {
+      more.classList.remove('hidden');
+      btn.firstElementChild.textContent = 'Réduire';
+      arrow.textContent = 'expand_less';
+    } else {
+      more.classList.add('hidden');
+      btn.firstElementChild.textContent = 'Lire la suite';
+      arrow.textContent = 'expand_more';
+    }
+  }
+
+  function downloadBrochure() {
+    showToast('Brochure PDF exclusive en cours de téléchargement...', 'download_done');
+  }
+
+  function openFullscreenPrompt() {
+    showToast('Mode galerie plein écran haute définition ouvert', 'photo_library');
+  }
+
+  function handleInquirySubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-inquiry-btn');
+    const success = document.getElementById('inquiry-success');
+    btn.disabled = true;
+    btn.classList.add('opacity-70');
+    btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span> Envoi...';
+
+    setTimeout(() => {
+      btn.classList.add('hidden');
+      success.classList.remove('hidden');
+      showToast('Demande envoyée au conseiller Sami Ben Salem', 'done');
+    }, 800);
+  }
+
+  function showToast(text, iconName = 'check_circle') {
+    const toast = document.getElementById('toast');
+    const msg = document.getElementById('toast-message');
+    const icon = document.getElementById('toast-icon');
+    if (!toast) return;
+    msg.textContent = text;
+    icon.textContent = iconName;
+    toast.classList.remove('opacity-0', 'translate-y-3');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-3');
+    }, 2800);
+  }
+
+  // Update image counter upon user carousel scroll
+  const carousel = document.getElementById('gallery-carousel');
+  const counter = document.getElementById('gallery-counter');
+  if (carousel && counter) {
+    carousel.addEventListener('scroll', () => {
+      const scrollPos = carousel.scrollLeft;
+      const width = carousel.offsetWidth;
+      const index = Math.round(scrollPos / width) + 1;
+      counter.textContent = `${index} / 12`;
+    });
+  }
+</script></main></body></html>

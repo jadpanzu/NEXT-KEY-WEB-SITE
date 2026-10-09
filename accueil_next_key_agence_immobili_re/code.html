@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-secondary-fixed': '#001d32', 'on-tertiary': '#ffffff', 'primary': '#006192', 'on-primary-fixed': '#001e31', 'on-error-container': '#93000a', 'outline-variant': '#bfc7d1', 'background': '#fcf9f2', 'tertiary': '#9e3d22', 'tertiary-fixed-dim': '#ffb5a1', 'error': '#ba1a1a', 'error-container': '#ffdad6', 'primary-container': '#007bb8', 'surface-container-low': '#f6f3ec', 'on-tertiary-fixed-variant': '#81280f', 'surface-tint': '#006496', 'on-secondary': '#ffffff', 'surface-container-high': '#ebe8e1', 'secondary-fixed-dim': '#a7caed', 'on-primary': '#ffffff', 'surface-container-lowest': '#ffffff', 'primary-fixed-dim': '#91cdff', 'on-error': '#ffffff', 'on-primary-fixed-variant': '#004b72', 'inverse-on-surface': '#f3f0e9', 'on-tertiary-fixed': '#3c0800', 'on-surface': '#1c1c18', 'primary-fixed': '#cce5ff', 'surface-variant': '#e5e2db', 'inverse-surface': '#31312c', 'surface-container': '#f0eee7', 'surface-container-highest': '#e5e2db', 'secondary-fixed': '#cde5ff', 'on-secondary-fixed-variant': '#264a67', 'on-surface-variant': '#3f4850', 'on-primary-container': '#fcfcff', 'outline': '#707881', 'on-tertiary-container': '#fffbff', 'secondary': '#3f6180', 'surface-bright': '#fcf9f2', 'secondary-container': '#b8dbff', 'tertiary-fixed': '#ffdbd1', 'on-secondary-container': '#3e607f', 'on-background': '#1c1c18', 'surface': '#fcf9f2', 'inverse-primary': '#91cdff', 'tertiary-container': '#be5437', 'surface-dim': '#dcdad3' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'gutter-sm': '1rem', 'gutter': '1.5rem', 'space-xl': '2.5rem', 'gutter-lg': '2.5rem', 'margin': '1.5rem', 'space-sm': '0.5rem', 'space-2xl': '4rem', 'space-xs': '0.25rem', 'margin-md': '3rem', 'margin-lg': '5rem', 'space-md': '1rem', 'space-lg': '1.5rem' }, fontFamily: { 'label-lg': ['Plus Jakarta Sans'], 'headline-md': ['Playfair Display'], 'headline-sm': ['Playfair Display'], 'headline-lg': ['Playfair Display'], 'label-sm': ['Plus Jakarta Sans'], 'headline-lg-mobile': ['Playfair Display'], 'title': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'display-mobile': ['Playfair Display'], 'display': ['Playfair Display'] }, fontSize: { 'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '600' }], 'headline-md': ['28px', { lineHeight: '36px', fontWeight: '500' }], 'headline-sm': ['22px', { lineHeight: '30px', fontWeight: '500' }], 'headline-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-sm': ['11px', { lineHeight: '16px', letterSpacing: '0.08em', fontWeight: '700' }], 'headline-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '0', fontWeight: '600' }], 'title': ['18px', { lineHeight: '26px', fontWeight: '600' }], 'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }], 'body-sm': ['13px', { lineHeight: '20px', fontWeight: '400' }], 'body-md': ['15px', { lineHeight: '24px', fontWeight: '400' }], 'display-mobile': ['36px', { lineHeight: '44px', letterSpacing: '-0.01em', fontWeight: '600' }], 'display': ['56px', { lineHeight: '64px', letterSpacing: '-0.02em', fontWeight: '600' }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-surface-container-lowest py-space-xs px-margin flex items-center justify-between"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant truncate">Votre prochain chapitre commence ici</span><a class="font-label-sm text-label-sm font-bold text-on-secondary-fixed shrink-0 flex items-center gap-space-xs hover:text-primary transition-colors" data-path="estimation" href="#"><span>PROJET</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></div><div class="h-20 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Logo NEXT KEY" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wv6Gd84F2ijw0uLnwezdzOIuKV2Z3IojhpC7J4kC9gnMHAIchz8XYvnwkKS4A6XaUYaRALF-wE11eewPiiBlYbHdGf3PB_lSz1-k9Fwc2eVNprmdWnaDN5n9M7Tapv3oRReW9ZdWfdBoKb-uaG8_Z70QWdTX4xGQGoBgAfAU3Z1IJpD80FxapG-qyiHLRvrJAddFSR4YdMTZ2l_y6i2KrKedsz6ZqruIYPvk6Cd469Zb-FopfhPwmwNQ"/><div class="flex flex-col"><span class="font-title text-title font-bold text-on-surface leading-none tracking-tight">NEXT KEY</span><span class="font-headline-sm text-headline-sm text-on-surface-variant sr-only">Accueil</span></div></div><div class="flex items-center gap-space-xs"><a aria-label="Appeler NEXT KEY" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" href="tel:+21628139992"><span class="material-symbols-outlined">call</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button aria-label="Ouvrir le menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface" onclick="document.getElementById('mobile-drawer').classList.toggle('translate-x-full')" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div></header><div class="fixed inset-0 z-[60] bg-inverse-surface/40 backdrop-blur-sm transition-transform duration-300 translate-x-full" id="mobile-drawer"><div class="absolute right-0 top-0 bottom-0 w-4/5 max-w-sm bg-surface-container-lowest p-margin flex flex-col justify-between pt-safe pb-safe shadow-[0_20px_40px_-8px_rgba(23,61,90,0.12)]"><div class="flex flex-col"><div class="flex items-center justify-between pb-space-lg"><img alt="Logo NEXT KEY" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wv6Gd84F2ijw0uLnwezdzOIuKV2Z3IojhpC7J4kC9gnMHAIchz8XYvnwkKS4A6XaUYaRALF-wE11eewPiiBlYbHdGf3PB_lSz1-k9Fwc2eVNprmdWnaDN5n9M7Tapv3oRReW9ZdWfdBoKb-uaG8_Z70QWdTX4xGQGoBgAfAU3Z1IJpD80FxapG-qyiHLRvrJAddFSR4YdMTZ2l_y6i2KrKedsz6ZqruIYPvk6Cd469Zb-FopfhPwmwNQ"/><button aria-label="Fermer le menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" type="button"><span class="material-symbols-outlined">close</span></button></div><nav class="flex flex-col gap-space-sm py-space-md" data-active-classes="text-primary font-bold"><a aria-current="page" class="py-space-sm transition-colors text-primary font-bold" data-path="accueil" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Accueil</a><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="nos-biens" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Nos Biens</a><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="acheter" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Acheter</a><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="vendre" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Vendre</a><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="services" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Nos Services</a><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="agence" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Notre Agence</a><a class="font-title text-title py-space-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">Contact</a></nav></div><div class="flex flex-col gap-space-md pt-space-lg"><a class="w-full py-space-md px-space-lg rounded-xl bg-tertiary text-on-tertiary text-center font-label-lg text-label-lg uppercase tracking-wider shadow-[0_8px_24px_-4px_rgba(23,61,90,0.06)] hover:bg-tertiary-container transition-colors" data-path="estimation" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">ESTIMATION GRATUITE</a><div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><p class="font-bold text-on-surface">NEXT KEY Tunis</p><p>El Menzah 9, Tunis</p><p>+216 28 139 992</p></div></div></div></div><main class="flex flex-col relative w-full pt-20 bg-surface flex-grow"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION MOBILE -->
+<section class="relative w-full overflow-hidden bg-on-secondary-fixed">
+<div class="relative w-full h-[540px]">
+<img class="w-full h-full object-cover" data-alt="High-end Mediterranean modern luxury villa in Carthage Tunis with whitewashed facade, sun-drenched travertine stone terrace, infinity turquoise swimming pool, ancient olive trees, and soft sunset Mediterranean horizon glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHeCAvgwQLzZd9ek0bJjT2vOXIw8ZclHAxmfZlHdm49JBGDbXnhlVy-XB0oASygXpz3PifVz71lO_Jf2naNplhKfeKQSChudJc1f96eJkwbwLQimK71LaeS1YInij26iYAV_EZlrSbajIXxCLums6D3qkZYwb-jNJ7dWJQt_USULpKirEetQWKLLFOV0Q2IgU6j_0p3t6ucLbck1BUtKPAFWwr9uVHwAM2O64v4Q6f4-e6jia5OEHa"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed via-on-secondary-fixed/55 to-on-secondary-fixed/25"></div>
+<div class="absolute inset-0 flex flex-col justify-end p-margin pb-space-xl">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-surface-variant font-bold">NEXT KEY · Agence Immobilière Tunis</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-surface font-headline-md tracking-tight mb-space-sm leading-tight">
+          Le bon bien.<br/>La bonne clé.<br/><span class="italic font-normal text-secondary-fixed">Votre prochaine histoire.</span>
+</h1>
+<p class="font-body-md text-body-md text-surface-container-high mb-space-lg line-clamp-3">
+          Découvrez des biens d'exception et bénéficiez d'un accompagnement personnalisé pour concrétiser sereinement votre projet immobilier.
+        </p>
+<div class="flex flex-col gap-space-sm">
+<a class="w-full py-3.5 px-space-md rounded-lg bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider text-center shadow-md hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs" href="#selection">
+<span>Découvrir nos biens</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full py-3 px-space-md rounded-lg bg-surface-container-lowest/15 backdrop-blur-md text-surface font-label-lg text-label-lg uppercase tracking-wider text-center hover:bg-surface-container-lowest/25 transition-all" href="#estimation">
+            Estimer mon bien
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. MODULE DE RECHERCHE FLOTTANT -->
+<section class="px-margin -mt-6 relative z-20">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-xl flex flex-col gap-space-md">
+<!-- Tabs Segmented Control -->
+<div class="flex bg-surface-container-low rounded-lg p-1" id="search-tabs">
+<button class="search-tab-btn flex-1 py-2 rounded-lg font-label-lg text-label-lg text-center transition-all bg-on-secondary-fixed text-on-secondary font-bold shadow-sm" onclick="setSearchType('achat', this)" type="button">
+          Acheter
+        </button>
+<button class="search-tab-btn flex-1 py-2 rounded-lg font-label-lg text-label-lg text-center transition-all text-on-surface-variant hover:text-on-surface" onclick="setSearchType('location', this)" type="button">
+          Louer
+        </button>
+</div>
+<!-- Filter Inputs Stack -->
+<div class="flex flex-col gap-space-sm">
+<!-- Property Type -->
+<div class="flex flex-col bg-surface-container-low rounded-lg px-space-md py-2.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="filter-type">Type de bien</label>
+<div class="flex items-center justify-between mt-0.5">
+<select class="bg-transparent font-title text-body-md text-on-surface outline-none w-full cursor-pointer pr-space-sm appearance-none" id="filter-type">
+<option value="villa">Villa &amp; Demeure</option>
+<option value="appartement">Appartement haut standing</option>
+<option value="penthouse">Penthouse / Duplex</option>
+<option value="terrain">Terrain exclusif</option>
+<option value="commercial">Local commercial</option>
+</select>
+<span class="material-symbols-outlined text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Location Selector -->
+<div class="flex flex-col bg-surface-container-low rounded-lg px-space-md py-2.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="filter-loc">Localisation</label>
+<div class="flex items-center justify-between mt-0.5">
+<select class="bg-transparent font-title text-body-md text-on-surface outline-none w-full cursor-pointer pr-space-sm appearance-none" id="filter-loc">
+<option value="tous">Grand Tunis (Toutes zones)</option>
+<option value="carthage">Carthage</option>
+<option value="marsa">La Marsa</option>
+<option value="gammarth">Gammarth</option>
+<option value="menzah">El Menzah 9 &amp; Ennasr</option>
+<option value="lac">Les Berges du Lac 1 &amp; 2</option>
+<option value="sidibou">Sidi Bou Saïd</option>
+</select>
+<span class="material-symbols-outlined text-outline pointer-events-none text-[20px]">location_on</span>
+</div>
+</div>
+<!-- Budget Quick Filter -->
+<div class="flex flex-col bg-surface-container-low rounded-lg px-space-md py-2.5">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Budget Max (TND)</span>
+<span class="font-label-lg text-label-lg font-bold text-primary" id="budget-value">2 500 000 TND</span>
+</div>
+<input class="w-full mt-2 accent-primary h-1.5 bg-surface-container-high rounded-lg cursor-pointer" max="6000000" min="300000" oninput="updateBudget(this.value)" step="100000" type="range" value="2500000"/>
+</div>
+<!-- Search Action Button -->
+<button class="w-full mt-space-xs py-3.5 px-space-md rounded-lg bg-on-secondary-fixed text-on-secondary font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-space-sm shadow-md hover:bg-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">search</span>
+<span>Rechercher les opportunités</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 3. NOTRE SÉLECTION DE BIENS -->
+<section class="px-margin pt-space-2xl flex flex-col gap-space-lg" id="selection">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold">Sélection Curatée</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-headline-md leading-tight">Des biens qui vous ressemblent.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Des adresses rares soigneusement choisies pour sublimer vos aspirations résidentielles.</p>
+</div>
+<!-- Properties Vertical Stack -->
+<div class="flex flex-col gap-space-lg">
+<!-- Property Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative w-full h-56">
+<img class="w-full h-full object-cover" data-alt="Architectural modern villa in Carthage Tunisia with large bay windows opening to Mediterranean garden, private pool, soft limestone walls and modern arches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYxjTxGQ5xiJVVmfjcoz9RdqdeETpA1tbQT7d8oQ1W4mjgH7d3NkM54qST0TpEGSW7rUKdKeVY8sZioso8GYnCPf0smLAIFdnXGRHOVX_aQDun0ihLsE9Layk7alcu0Hi90LAWpEoT3l6QKVvs7_OG5XdhS68gXxDnHFqPZD7HBVe-wlp0v3ZAS-xiGgT429e_pJkID-7tc5Fyqud8SzVwTWjiIwOfQp4YzK73lCfrtjCPSeCB_14k"/>
+<div class="absolute top-3 left-3 flex gap-space-xs">
+<span class="px-3 py-1 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm uppercase tracking-wider shadow-sm">À VENDRE</span>
+<span class="px-3 py-1 rounded-full bg-on-secondary-fixed text-on-secondary font-label-sm text-label-sm uppercase tracking-wider shadow-sm">Exclusivité</span>
+</div>
+<button aria-label="Ajouter aux favoris" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" onclick="toggleFavorite(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-on-secondary-fixed/90 backdrop-blur-sm px-3 py-1 rounded-lg text-surface-container-lowest font-label-sm text-label-sm">
+            Carthage Présidence
+          </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between">
+<span class="font-title text-title text-on-secondary-fixed font-bold">2 850 000 <span class="text-label-sm font-normal text-on-surface-variant">TND</span></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-headline-md leading-tight">Villa Contemporaine &amp; Jardins d'Oliviers</h3>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">bed</span>
+<span>5 ch</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">bathtub</span>
+<span>4 sdb</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">square_foot</span>
+<span>480 m²</span>
+</div>
+</div>
+<a class="mt-space-xs w-full py-2.5 rounded-lg bg-surface-container-low text-on-secondary-fixed font-label-lg text-label-lg text-center hover:bg-secondary-container transition-colors" href="#">
+            Découvrir la propriété
+          </a>
+</div>
+</article>
+<!-- Property Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative w-full h-56">
+<img class="w-full h-full object-cover" data-alt="Mediterranean penthouse in La Marsa Tunis with spacious sea view rooftop terrace, lounge sofa, white pergolas and coastal panoramic perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjyG_J_WrjhBuktzVRKpWhUIfd-k8HLeuaF92liT6XhOr5pnvH0JuEGOPqqyfzNAa2kIxROu--qFIS2i7cXGbSWO4K3sNaL0pWFmmk9dfKilcSD0Vk7Xlt1Ah_jLfZHkfYKHxAylu31x4VT4jq14gTO6JW1n-ZiH4zBkEN8yvhOGQ36vmFWrZBYRN7Eiwr1ox6kXn6Z0u6AQ9UBAYWZrXJ1Hv6bXKspzhVL5aebAymkRDJNF-Uxe7j"/>
+<div class="absolute top-3 left-3">
+<span class="px-3 py-1 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm uppercase tracking-wider shadow-sm">À VENDRE</span>
+</div>
+<button aria-label="Ajouter aux favoris" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" onclick="toggleFavorite(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-on-secondary-fixed/90 backdrop-blur-sm px-3 py-1 rounded-lg text-surface-container-lowest font-label-sm text-label-sm">
+            La Marsa Corniche
+          </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between">
+<span class="font-title text-title text-on-secondary-fixed font-bold">1 650 000 <span class="text-label-sm font-normal text-on-surface-variant">TND</span></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-headline-md leading-tight">Duplex Panoramique Vue Mer</h3>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">bed</span>
+<span>3 ch</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">bathtub</span>
+<span>3 sdb</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">square_foot</span>
+<span>260 m²</span>
+</div>
+</div>
+<a class="mt-space-xs w-full py-2.5 rounded-lg bg-surface-container-low text-on-secondary-fixed font-label-lg text-label-lg text-center hover:bg-secondary-container transition-colors" href="#">
+            Découvrir la propriété
+          </a>
+</div>
+</article>
+<!-- Property Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative w-full h-56">
+<img class="w-full h-full object-cover" data-alt="High luxury lakefront apartment in Les Berges du Lac 2 Tunis with floor-to-ceiling glass windows, warm wooden accents, designer lighting and sunset reflective waters" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJKEZBVN3LgfuLs8cgmNIhJ8J6tRmyfyp0iM9noqY9h4ExF7pxcEbOrIydqAWxq9_x93eH2FsBLSBahLlyxaiD4HJHY5_okZce4tglQrtx2mxT2hR7lIWIIZMAmIsKEQGf8kO_k3tcaOuT6xS1WIe5-cQ3nEReNGefw2bxtm4MmbKgDB8sPu2o4hxYoDdM0k2Vszeypx43EComavXB_q52yCjn1nD0qXkB41QDO3MSS9BDk3gHvAre"/>
+<div class="absolute top-3 left-3">
+<span class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider shadow-sm">À LOUER</span>
+</div>
+<button aria-label="Ajouter aux favoris" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" onclick="toggleFavorite(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-on-secondary-fixed/90 backdrop-blur-sm px-3 py-1 rounded-lg text-surface-container-lowest font-label-sm text-label-sm">
+            Les Berges du Lac 2
+          </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between">
+<span class="font-title text-title text-on-secondary-fixed font-bold">4 500 <span class="text-label-sm font-normal text-on-surface-variant">TND / mois</span></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-headline-md leading-tight">Penthouse Diplomatic &amp; Terrasses</h3>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">bed</span>
+<span>4 ch</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">bathtub</span>
+<span>3 sdb</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">square_foot</span>
+<span>320 m²</span>
+</div>
+</div>
+<a class="mt-space-xs w-full py-2.5 rounded-lg bg-surface-container-low text-on-secondary-fixed font-label-lg text-label-lg text-center hover:bg-secondary-container transition-colors" href="#">
+            Découvrir la propriété
+          </a>
+</div>
+</article>
+</div>
+<a class="w-full py-3.5 rounded-lg bg-on-secondary-fixed text-on-secondary font-label-lg text-label-lg uppercase tracking-wider text-center flex items-center justify-center gap-space-xs shadow-sm hover:bg-secondary transition-colors" href="#">
+<span>Voir tous nos biens (42)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</section>
+<!-- 4. PRÉSENTATION DE L'AGENCE -->
+<section class="mt-space-2xl bg-surface-container-low px-margin py-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Bienvenue chez NEXT KEY</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-headline-md leading-tight">Bien plus qu'une agence. Votre partenaire immobilier.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Chez NEXT KEY, chaque projet immobilier mérite une attention particulière. Nous vous accompagnons à chaque étape, de la recherche du bien idéal à la concrétisation de votre transaction, avec proximité, transparence et professionnalisme.
+      </p>
+</div>
+<!-- 3 Core Pillars -->
+<div class="flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex gap-space-md items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">person_check</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title text-title text-on-surface">Accompagnement personnalisé</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Un interlocuteur dédié qui comprend vos exigences patrimoniales et votre rythme de vie.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex gap-space-md items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">travel_explore</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title text-title text-on-surface">Connaissance du marché local</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Une maîtrise rigoureuse des valorisations foncières à Tunis, de Carthage à El Menzah.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex gap-space-md items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title text-title text-on-surface">Approche fondée sur la confiance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Transparence juridique absolue, discrétion totale et intégrité commerciale éprouvée.</p>
+</div>
+</div>
+</div>
+<a class="w-full py-3 rounded-lg bg-surface-container-lowest text-on-secondary-fixed font-label-lg text-label-lg text-center font-bold shadow-sm flex items-center justify-center gap-space-xs hover:bg-surface-container-high transition-colors" href="#">
+<span>Découvrir notre agence</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</section>
+<!-- 5. NOS SERVICES -->
+<section class="px-margin pt-space-2xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold">Expertise 360°</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-headline-md leading-tight">Tous vos projets immobiliers, entre de bonnes mains.</h2>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Service 01 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-headline-md text-tertiary">01</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">key</span>
+</div>
+<h3 class="font-title text-title text-on-surface mt-1">Achat Immobilier</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Trouvons ensemble le bien qui correspond à vos besoins et vos aspirations. Accès prioritaire aux propriétés hors marché.
+        </p>
+</div>
+<!-- Service 02 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-headline-md text-tertiary">02</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">storefront</span>
+</div>
+<h3 class="font-title text-title text-on-surface mt-1">Vente Immobilière</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Valorisez votre propriété et bénéficiez d'un accompagnement structuré, de l'estimation experte à la signature notariée.
+        </p>
+</div>
+<!-- Service 03 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-headline-md text-tertiary">03</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">real_estate_agent</span>
+</div>
+<h3 class="font-title text-title text-on-surface mt-1">Gestion Locative</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Confiez la gestion de votre bien à une équipe attentive assurant la sérénité de vos revenus et la préservation de votre capital.
+        </p>
+</div>
+<!-- Service 04 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-headline-md text-tertiary">04</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">query_stats</span>
+</div>
+<h3 class="font-title text-title text-on-surface mt-1">Analyse du Marché</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Obtenez une compréhension fine des tendances de prix par quartier et des rendements locatifs pour sécuriser votre investissement.
+        </p>
+</div>
+</div>
+</section>
+<!-- 6. RECHERCHE PAR QUARTIER -->
+<section class="px-margin pt-space-2xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Territoires d'Élite</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-headline-md leading-tight">Le bon emplacement fait toute la différence.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Explorez les adresses les plus prisées du Grand Tunis.</p>
+</div>
+<!-- 2-column Grid for Neighborhoods -->
+<div class="grid grid-cols-2 gap-space-sm">
+<a class="relative rounded-xl overflow-hidden h-36 flex flex-col justify-end p-space-sm shadow-sm" href="#">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="La Marsa coastal lifestyle Tunis, sandy beach seaside walkway and Mediterranean trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDln0dfWtSdQU-dCYKwPQrthNdmg7k4zbLc3RaQsTyPFKYjsffFwOTNN1Op9YNJOGLV_JnkNsDdjj_mnuTj1V8fWGXj67TvS_8cOS3vDTTYHgDTQBR1yvR7kmAlQAerz1Om_lkpDDuh0FiAXlc5xz6aRlBaVj8wcoc04bsHNix8nQ5tfCYY3sMCbIQnDT4dcdbk44Y160DDj50x7m5hX1ZlIu6d4_-i1HhL17UZrGYzm1dzM4uM4vJx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/85 via-on-secondary-fixed/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col">
+<span class="font-title text-title text-surface font-bold">La Marsa</span>
+<span class="font-label-sm text-label-sm text-surface-container-high">14 biens</span>
+</div>
+</a>
+<a class="relative rounded-xl overflow-hidden h-36 flex flex-col justify-end p-space-sm shadow-sm" href="#">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Carthage hills Tunis, sea view historical Mediterranean luxury residences with pine trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-40vtHiqdOLfJCASqQUyu1LAEXKPSdXvozA_uykUjNyGNj0g_iARlhdy-A8w7-Fqj5aBaSv9S1Q3VT0_Im7wDGuOU-tM8VnWyvYexY1Na8kwu0cQ3dvxtxoc_k1fpuvVi-exO5L2Qqnmg19PgP_FTd9_rYet7f5i_SPAp6nwf6s2SknPXgRhyNbe_0zf4XMSR-hUL07-PZI5mXt7r2Zm4CULuAVV2XpuucETL08RyiOjDdl5eQkYL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/85 via-on-secondary-fixed/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col">
+<span class="font-title text-title text-surface font-bold">Carthage</span>
+<span class="font-label-sm text-label-sm text-surface-container-high">9 biens</span>
+</div>
+</a>
+<a class="relative rounded-xl overflow-hidden h-36 flex flex-col justify-end p-space-sm shadow-sm" href="#">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="El Menzah 9 Tunis high-end residential neighborhood villas and calm avenues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDONDnZPlW98G35d-YdIyzaYcqjlfUUGfHI4CRonrnQe4D8ViRQaM1wjp5B9RLNVHQ6Lu5zhNY3wpJxA_yG1YiCrzBsDfzIjBtIyCMCZxQpJXkHTq5XBgh_axtPQ5bG770w33uWwMBVH1ukoLEr8wOxI5CuaJUoE7MCuc6lW2XDUwjQ7Q0fNDVHQJb_hg6EWsxDRTNZM4vRoQMuzdaGd5r8RdRSuGDnPuEI5M1TzTapizQeWGob4-p-"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/85 via-on-secondary-fixed/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col">
+<span class="font-title text-title text-surface font-bold">El Menzah 9</span>
+<span class="font-label-sm text-label-sm text-surface-container-high">12 biens</span>
+</div>
+</a>
+<a class="relative rounded-xl overflow-hidden h-36 flex flex-col justify-end p-space-sm shadow-sm" href="#">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Les Berges du Lac Tunis modern glassy architecture waterfront luxury promenade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6pdqRLlBE-L4UuinhgOr9bLI6T0ocFl748aqRIA2qdmqxrLsELNV1NC3leJwaPAPgjIBfaUnspqD4tel0T_O59Qnwi3Nq0tx-nup9dMTyI17x0C8i6YiKxLqmGbuS1VX6XteFaDc9emkwCOakv0wLn_v7iwTWz4AMITL5BC7qI4RPHUMn5MfI9LJcRMT1kf0wggUkyZhwUNhb7v65rImi7ZFPeSsc7rsIt-tyjAkA3HPE-iLpmxaO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/85 via-on-secondary-fixed/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col">
+<span class="font-title text-title text-surface font-bold">Les Berges du Lac</span>
+<span class="font-label-sm text-label-sm text-surface-container-high">18 biens</span>
+</div>
+</a>
+<a class="relative rounded-xl overflow-hidden h-36 flex flex-col justify-end p-space-sm shadow-sm" href="#">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Sidi Bou Said Tunisia iconic blue and white architecture with bougainvillea flowers overlooking Mediterranean sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqTfRbi0xKtumM9cDfsOvit3Oi75cx7f4HVLjP-IuYq59BrPCE2ebD4y003Jzxaw_lp-ix_g9_ggTFxYQ-W1uURJKV8e73vjIgjgDycYfrQSSWPn3ocZ2w-jSzwFZlyRMboerPTJaG1ATl9aG7oN_g7t-sTu4w4UQII2uQPRsuacpnnG27aUf6pSuysIG3n7Ibf3JRjVdgE0hk1M_51FLRp8xI8q6_RJDDFmG33HVWmhn86i2aLooX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/85 via-on-secondary-fixed/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col">
+<span class="font-title text-title text-surface font-bold">Sidi Bou Saïd</span>
+<span class="font-label-sm text-label-sm text-surface-container-high">5 biens</span>
+</div>
+</a>
+<a class="relative rounded-xl overflow-hidden h-36 flex flex-col justify-end p-space-sm shadow-sm" href="#">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Gammarth Tunis luxury modern sea front coastal forest villas and private pools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdANrgi32GqwtOT6FT7ZJGmSR8WLXSb1N472T6_BF6reeVHZsqCQuPWDtL9OMQ323VuijW3d0zSx4tNU4deiJCESBDHd0loJNY-cfHFNvyqAS5rGyywLgrOsb-6bwr1ol2U-l378kHOQ54z3ShlWestnuj8W0KD6luqSe_nZlXXiuZEurr-qaW3FpY5713bkWo--DEDHCFI2BwgdZp5jz-xoqwZJjBzjIXBbS5we9p0ZVLij4XfiRd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/85 via-on-secondary-fixed/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col">
+<span class="font-title text-title text-surface font-bold">Gammarth</span>
+<span class="font-label-sm text-label-sm text-surface-container-high">11 biens</span>
+</div>
+</a>
+</div>
+</section>
+<!-- 7. PROCESSUS EN 3 ÉTAPES -->
+<section class="mt-space-2xl bg-surface-container-low px-margin py-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold">Méthode de travail</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-headline-md leading-tight">Un chemin clair vers votre acquisition.</h2>
+</div>
+<div class="flex flex-col gap-space-lg relative">
+<!-- Step 1 -->
+<div class="flex gap-space-md items-start">
+<div class="w-10 h-10 rounded-full bg-on-secondary-fixed text-surface flex items-center justify-center shrink-0 font-headline-sm font-headline-md text-[18px]">
+          1
+        </div>
+<div class="flex flex-col">
+<h3 class="font-title text-title text-on-surface">Échangeons sur votre vision</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+            Un premier rendez-vous approfondi pour définir précisément votre cahier des charges, votre budget et votre calendrier.
+          </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-space-md items-start">
+<div class="w-10 h-10 rounded-full bg-on-secondary-fixed text-surface flex items-center justify-center shrink-0 font-headline-sm font-headline-md text-[18px]">
+          2
+        </div>
+<div class="flex flex-col">
+<h3 class="font-title text-title text-on-surface">Trouvons la bonne opportunité</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+            Sélections ciblées, visites privées organisées et contre-visites techniques sans perte de temps inutile.
+          </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-space-md items-start">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0 font-headline-sm font-headline-md text-[18px]">
+          3
+        </div>
+<div class="flex flex-col">
+<h3 class="font-title text-title text-on-surface">Concrétisons en toute sérénité</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+            Négociation juste, audit juridique des titres et coordination avec les notaires jusqu'à la remise des clés.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. ESTIMATION OFFERTE & TÉMOIGNAGE -->
+<section class="px-margin pt-space-2xl flex flex-col gap-space-lg" id="estimation">
+<!-- Valuation Banner -->
+<div class="bg-gradient-to-br from-on-secondary-fixed to-secondary p-space-lg rounded-xl text-on-secondary flex flex-col gap-space-md shadow-md">
+<div class="flex items-center gap-space-xs text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[20px]">calculate</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Service Offert</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-surface font-headline-md leading-tight">
+        Combien vaut réellement votre bien aujourd'hui ?
+      </h2>
+<p class="font-body-md text-body-md text-surface-container-high leading-relaxed">
+        Bénéficiez d'une estimation confidentielle, objective et ancrée dans la réalité des dernières transactions de votre secteur à Tunis.
+      </p>
+<a class="w-full py-3.5 px-space-md rounded-lg bg-tertiary text-on-tertiary font-label-lg text-label-lg uppercase tracking-wider text-center font-bold shadow hover:bg-tertiary-container transition-colors" href="#contact">
+        Demander une estimation gratuite
+      </a>
+</div>
+<!-- Editorial Testimonial -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-headline-sm text-headline-sm font-headline-md italic text-on-surface leading-snug">
+        « NEXT KEY a su comprendre exactement ce que nous cherchions à La Marsa sans nous faire visiter une seule maison hors sujet. Une qualité d'écoute et une rigueur exemplaires. »
+      </blockquote>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed font-title text-label-lg">
+          SK
+        </div>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Dr. Sami &amp; Leila K.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Acquéreurs à La Marsa Corniche</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. CONTACT DIRECT & COORDONNÉES -->
+<section class="px-margin pt-space-2xl pb-space-lg flex flex-col gap-space-lg" id="contact">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Contact Direct</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-headline-md leading-tight">Commençons à échanger dès aujourd'hui.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Notre équipe vous accueille à El Menzah 9 ou répond par téléphone à vos questions.</p>
+</div>
+<!-- Quick Call Cards -->
+<div class="grid grid-cols-2 gap-space-sm">
+<a class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1 items-start" href="tel:+21628139992">
+<span class="material-symbols-outlined text-tertiary text-[22px]">phone_in_talk</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Ligne Principale</span>
+<span class="font-title text-title font-bold text-on-surface leading-tight">+216 28 139 992</span>
+</a>
+<a class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1 items-start" href="tel:+21628139994">
+<span class="material-symbols-outlined text-primary text-[22px]">support_agent</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Ligne Directe</span>
+<span class="font-title text-title font-bold text-on-surface leading-tight">+216 28 139 994</span>
+</a>
+</div>
+<!-- Location Address Badge -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Agence NEXT KEY</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rue Hédi Essoued, El Menzah 9, Tunis</span>
+</div>
+</div>
+<!-- Interactive Contact Form -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm font-headline-md text-on-surface">Envoyez-nous un message</h3>
+<form class="flex flex-col gap-space-sm" onsubmit="handleContactSubmit(event)">
+<div class="flex flex-col bg-surface-container-low rounded-lg px-space-md py-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase" for="form-name">Nom et Prénom</label>
+<input class="bg-transparent font-body-md text-body-md text-on-surface outline-none mt-1" id="form-name" placeholder="Votre nom" required="" type="text"/>
+</div>
+<div class="flex flex-col bg-surface-container-low rounded-lg px-space-md py-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase" for="form-phone">Numéro de téléphone</label>
+<input class="bg-transparent font-body-md text-body-md text-on-surface outline-none mt-1" id="form-phone" placeholder="+216 ..." required="" type="tel"/>
+</div>
+<div class="flex flex-col bg-surface-container-low rounded-lg px-space-md py-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase" for="form-project">Votre projet</label>
+<select class="bg-transparent font-body-md text-body-md text-on-surface outline-none mt-1 cursor-pointer" id="form-project">
+<option value="achat">Je souhaite acheter un bien</option>
+<option value="vente">Je souhaite vendre mon bien</option>
+<option value="location">Je recherche une location</option>
+<option value="estimation">Je désire une estimation</option>
+</select>
+</div>
+<div class="flex flex-col bg-surface-container-low rounded-lg px-space-md py-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase" for="form-msg">Précisions (secteur, budget...)</label>
+<textarea class="bg-transparent font-body-md text-body-md text-on-surface outline-none mt-1 resize-none" id="form-msg" placeholder="Parlez-nous de vos critères..." rows="3"></textarea>
+</div>
+<button class="w-full mt-space-xs py-3.5 px-space-md rounded-lg bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-space-xs shadow hover:bg-primary-container transition-colors" id="submit-btn" type="submit">
+<span>Transmettre ma demande</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<p class="hidden text-center font-label-sm text-label-sm text-primary font-bold pt-2" id="form-feedback">
+          Merci ! Un conseiller NEXT KEY vous contactera d'ici 2 heures ouvrées.
+        </p>
+</form>
+</div>
+</section>
+</div>
+<script>
+  function setSearchType(type, button) {
+    const tabs = document.querySelectorAll('.search-tab-btn');
+    tabs.forEach(btn => {
+      btn.classList.remove('bg-on-secondary-fixed', 'text-on-secondary', 'font-bold', 'shadow-sm');
+      btn.classList.add('text-on-surface-variant');
+    });
+    button.classList.add('bg-on-secondary-fixed', 'text-on-secondary', 'font-bold', 'shadow-sm');
+    button.classList.remove('text-on-surface-variant');
+  }
+
+  function updateBudget(val) {
+    const formatted = new Intl.NumberFormat('fr-TN').format(val);
+    document.getElementById('budget-value').textContent = formatted + ' TND';
+  }
+
+  function toggleFavorite(btn) {
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (icon.textContent === 'favorite_border') {
+      icon.textContent = 'favorite';
+      icon.style.fontVariationSettings = "'FILL' 1";
+      btn.classList.add('text-tertiary');
+    } else {
+      icon.textContent = 'favorite_border';
+      icon.style.fontVariationSettings = "'FILL' 0";
+      btn.classList.remove('text-tertiary');
+    }
+  }
+
+  function handleContactSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const feedback = document.getElementById('form-feedback');
+    btn.disabled = true;
+    btn.classList.add('opacity-70');
+    btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">autorenew</span> Transmission...';
+    
+    setTimeout(() => {
+      btn.classList.add('hidden');
+      feedback.classList.remove('hidden');
+    }, 700);
+  }
+</script><footer class="bg-on-secondary-fixed text-on-secondary px-margin pt-space-2xl pb-space-2xl mt-space-2xl"><div class="flex flex-col gap-space-xl"><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-medium">NEXT KEY</span><p class="font-body-md text-body-md text-outline-variant italic">La clé de votre prochain projet immobilier.</p></div><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-container-highest"><p class="font-label-lg text-label-lg text-surface-container-lowest uppercase tracking-wider mb-space-xs">Agence</p><p>Rue Hédi Essoued, El Menzah 9, Tunis</p><p>Tél : <a class="hover:underline" href="tel:+21628139992">+216 28 139 992</a> / <a class="hover:underline" href="tel:+21628139994">+216 28 139 994</a></p></div><div class="flex flex-wrap gap-x-space-lg gap-y-space-sm font-label-sm text-label-sm text-surface-container-high"><a class="hover:text-surface-container-lowest transition-colors" data-path="acheter" href="#">Acheter</a><a class="hover:text-surface-container-lowest transition-colors" data-path="vendre" href="#">Vendre</a><a class="hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Gestion immobilière</a><a class="hover:text-surface-container-lowest transition-colors" data-path="marche" href="#">Analyse du marché</a><a class="hover:text-surface-container-lowest transition-colors" data-path="mentions-legales" href="#">Mentions légales</a><a class="hover:text-surface-container-lowest transition-colors" data-path="confidentialite" href="#">Politique de confidentialité</a></div><div class="font-body-sm text-body-sm text-outline-variant pt-space-lg"><p>© 2024 NEXT KEY Immobilier. Tous droits réservés.</p></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-bold"><div class="h-16 px-gutter flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-primary font-bold" data-path="accueil" href="#"><span class="material-symbols-outlined text-[22px]">roofing</span><span class="font-label-sm text-label-sm mt-0.5">Accueil</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="nos-biens" href="#"><span class="material-symbols-outlined text-[22px]">apartment</span><span class="font-label-sm text-label-sm mt-0.5">Biens</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-tertiary hover:text-tertiary-container transition-colors" data-path="appel" href="tel:+21628139992"><span class="material-symbols-outlined text-[22px]">call</span><span class="font-label-sm text-label-sm mt-0.5">Appel</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="estimation" href="#"><span class="material-symbols-outlined text-[22px]">calculate</span><span class="font-label-sm text-label-sm mt-0.5">Estimation</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="agence" href="#"><span class="material-symbols-outlined text-[22px]">domain</span><span class="font-label-sm text-label-sm mt-0.5">Agence</span></a></div></nav></body></html>
